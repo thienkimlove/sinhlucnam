@@ -1,5 +1,3 @@
-<script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",13099]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
-<div class="banner-ads left">
     @foreach (\App\Site::getFrontendBanners()->where('position', 3) as $banner)
         <a href="{{$banner->link}}" title="" target="_blank">
             <img src="{{url('files/images', $banner->image)}}" alt="" width="171" height="454">

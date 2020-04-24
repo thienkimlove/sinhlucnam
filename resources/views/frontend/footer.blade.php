@@ -1,4 +1,4 @@
-<footer>
+﻿<footer>
     <div class="fixCen">
         <div class="copyright" align="center">
             Trang thông tin cộng đồng về sức khỏe sinh lý nam giới 
@@ -16,7 +16,7 @@
                 Trụ sở chính: Thôn 3, xã Phù Lưu Tế, Huyện Mỹ Đức, thành phố Hà Nội. <br>
                 Mã số doanh nghiệp: 0108304701 <br>
                 <strong>* Số điện thoại:</strong> <a href="tel: 0243.9901436">0243.9901436</a> <br>
-                <strong>* Email:</strong> <a href="mailto:sinhlucnam.vn@gmail.com">sinhlucnam.vn@gmail.com</a><br>
+                <strong>* Email:</strong> <a href="mailto:suckhoevangnguoiviet@gmail.com">suckhoevangnguoiviet@gmail.com</a><br>
                <strong>* Chịu trách nhiệm nội dung: </strong> Bà Đàm Thị Xuyến
             </div>
         </div>
