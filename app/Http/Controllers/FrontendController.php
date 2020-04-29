@@ -111,6 +111,7 @@ class FrontendController extends Controller
             if ($post) {
                 $meta_title = $post->tieude ? $post->tieude : $post->title;
                 $meta_desc = $post->desc;
+                $title = $meta_title;
                 $page = ($post->category->parent_id) ? $post->category->parent->slug : $post->category->slug;
                 $post->increment('views', 1);
                 if ($post->content_1 && $post->content_2) {
