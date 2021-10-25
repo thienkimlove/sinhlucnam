@@ -61,9 +61,6 @@ class AdminController extends Controller
             $googleUser = Socialite::driver('google')->user();
 
             $user = User::where('email', $googleUser->email)->get();
-
-            dd($user->toArray());
-
             if ($user) {
                 session()->put('admin_login', $user->first());
                 session()->put('admin_token', $googleUser->token);
@@ -74,7 +71,6 @@ class AdminController extends Controller
                 return redirect('admin/notice');
             }
         } catch (Exception $e) {
-            dd($e->getMessage());
             flash('Error when login! Please try again!'. $e->getMessage());
 
             return redirect('admin/notice');
