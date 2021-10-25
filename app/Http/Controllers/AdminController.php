@@ -71,6 +71,7 @@ class AdminController extends Controller
                 return redirect('admin/notice');
             }
         } catch (Exception $e) {
+            dd($e->getMessage());
             flash('Error when login! Please try again!'. $e->getMessage());
 
             return redirect('admin/notice');
