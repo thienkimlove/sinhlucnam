@@ -59,8 +59,10 @@ class AdminController extends Controller
     {
         try {
             $googleUser = Socialite::driver('google')->user();
-            dd($googleUser);
+
             $user = User::where('email', $googleUser->email)->get();
+
+            dd($user->toArray());
 
             if ($user) {
                 session()->put('admin_login', $user->first());
